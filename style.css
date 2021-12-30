@@ -1,0 +1,47 @@
+body {
+  background-color: #0F3701;
+}
+
+.heading {
+  color: #E4A727;
+  font-size: 7rem;
+  font-family: fantasy;
+  font-style: italic;
+  text-align: center;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.result {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.game-area {
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+.roll-dice {
+  color: #fff;
+  background-color: #ADF7A9;
+}
+
+.roll-dice:hover {
+  background-color: #70E070;
+}
+
+.roll-dice:click {
+  background-color: #ADF7A9;
+}
+
+footer {
+  color: #fff;
+  height: auto;
+}
+
+img {
+  max-width: 200px;
+}

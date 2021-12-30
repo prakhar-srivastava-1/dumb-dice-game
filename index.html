@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Diceee Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <main class="container-fluid mb-4">
+      <div class="jumbotron d-inline text-center p-5">
+          <h1 class="heading">Diceee Game!</h1>
+          <h2 class="result invisible" id="result"><br></h2>
+      </div>
+      <div class="container">
+        <div class="row text-center game-area">
+          <div class="col-md-5">
+            <h3>Player 1</h3>
+            <img id="playerOneDice" class="img img-fluid" src="images/dice1.png" alt="">
+          </div>
+          <div class="col-md-2">
+            <button type="button" name="roll-dice" id="roll-dice"
+            class="mt-5 p-2 form-control btn btn-lg btn-success align-text-bottom"
+            onclick="rollDice()">
+              Roll
+            </button>
+            <br>
+            <button type="button" name="roll-dice" id="roll-dice"
+            class="mt-2 p-2 form-control btn btn-lg btn-danger align-text-bottom"
+            onclick="resetGame()">
+              Reset Game
+            </button>
+          </div>
+          <div class="col-md-5">
+            <h3>Player 2</h3>
+            <img id="playerTwoDice" class="img img-fluid" src="images/dice1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+    <br><br><br><br>
+    <div class="bg-dark fixed-bottom mt-4">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between p-2 m-4 align-center border-top">
+
+          <div class="col-md-4 d-flex align-items-center">
+            <p class="d-block">&copy;
+              <span id="year"></span>
+              <script type="text/javascript">
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+              </script>
+            Diceee Game, All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

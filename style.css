@@ -16,12 +16,16 @@ body {
 
 .result {
   color: #fff;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 .game-area {
   color: #f0f0f0;
   font-style: italic;
+}
+
+.buttons {
+  width:60%;
 }
 
 .roll-dice {
@@ -43,5 +47,5 @@ footer {
 }
 
 img {
-  max-width: 200px;
+  width: 150px;
 }
